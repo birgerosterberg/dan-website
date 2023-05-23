@@ -516,6 +516,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -524,45 +528,42 @@ video {
   bottom: 0px;
 }
 
+.order-2 {
+  order: 2;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.m-auto {
+  margin: auto;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mr-2 {
   margin-right: 0.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mr-8 {
-  margin-right: 2rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .mt-2 {
@@ -573,8 +574,8 @@ video {
   margin-top: 1rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -585,16 +586,37 @@ video {
   height: 3.5rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-.justify-start {
-  justify-content: flex-start;
+.items-center {
+  align-items: center;
 }
 
 .justify-end {
@@ -614,16 +636,12 @@ video {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
-.p-2 {
-  padding: 0.5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .pt-6 {
@@ -653,6 +671,18 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:order-2 {
+    order: 2;
+  }
+
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -660,6 +690,10 @@ video {
 
   .md\:h-8 {
     height: 2rem;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 
   .md\:flex-row {
@@ -688,11 +722,6 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
