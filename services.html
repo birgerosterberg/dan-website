@@ -8,15 +8,15 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- TailwindCSS configfile loading -->
-    <link href="../dist/output.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
     <title>Dan Dahlén</title>
 </head>
 
-<body class="font-robo flex flex-col min-h-screen">
-    <header class="flex flex-col">
-        <div class="flex p-3 bg-teal-700 w-screen justify-end md:justify-end">
+<body class="font-robo flex flex-col min-h-screen overflow-x-hidden">
+    <header class=" flex flex-col">
+        <div class="flex p-3 bg-teal-700 justify-end">
             <div class="flex flex-col md:flex-row text-zinc-400 h-14 md:h-8 font-pop">
-                <p class="font-bold mt-1 mr-2">Boka en kostnadsfri konsultation</p>
+                <p class="font-bold pt-1 pr-2">Boka en kostnadsfri konsultation</p>
                 <p class="mt-1">+46 735 - 56 23 10</p>
             </div>
         </div>
@@ -43,11 +43,10 @@
         </div>
     </header>
 
-    <main class="flex flex-col items-center flex-grow w-screen">
-        <!-- Add main stuff here! -->
+    <main class="flex flex-col items-center flex-grow">
         <div class="flex flex-col mt-5 md:w-3/5">
             <h2 class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">Förebyggande tjänser</h2>
-            <div class="flex flex-col pl-2 md:pl-5">
+            <div class="flex flex-col ml-2 md:pl-5">
                 <h3 class="font-bold pb-2">Ergonomi</h3>
                 <p class="mb-5">Många som upplever smärta och stelhet, och som inte råkat ut för någon olycka eller
                     sjukdom, har
@@ -90,7 +89,7 @@
                     stannar i rummet, vilket är oerhört viktigt så alla kan känna sig trygga.
                 </p>
             </div>
-            <!-- Del 2 -->
+
             <h2 class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">Rehabiliterande tjänster</h2>
             <div class="flex flex-col pl-2 md:pl-5">
                 <h3 class="font-bold pb-2">Rehabkoordinering</h3>
@@ -118,7 +117,7 @@
                     vardagen. Tillsammans tittar vi på situationen och har en lösningsfokuserad riktning. Samtalen sker
                     digitalt. </p>
             </div>
-            <!-- Del 3 -->
+
             <h2 class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">För vårdgivare</h2>
             <div class="flex flex-col pl-2 md:pl-5">
                 <p class="mb-5">
@@ -126,10 +125,11 @@
                     som arbetsterapeut, rehabkoordinator och/eller ergonom, tillfälligt eller en längre period. Jag har
                     främst erfarenhet av arbetslivsinriktad rehabilitering, men även daglig verksamhet,
                     slutenpsykiatrisk vård, smärtrehabilitering samt kommunrehab.</p>
-
             </div>
         </div>
     </main>
+
+
     <footer class="bg-teal-700 w-screen h-34 p-4 flex text-zinc-200 mt-auto">
         <div class="flex justify-center flex-col w-screen">
             <p class="flex justify-center">Boka en kostnadsfri konsultation</p>
