@@ -8,11 +8,11 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- TailwindCSS configfile loading -->
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
     <title>Dan Dahlén</title>
 </head>
 
-<body class="font-robo">
+<body class="font-robo flex flex-col min-h-screen">
     <header class="flex flex-col">
         <div class="flex p-3 bg-teal-700 w-screen justify-end md:justify-end">
             <div class="flex flex-col md:flex-row text-zinc-400 h-14 md:h-8 font-pop">
@@ -42,10 +42,65 @@
             </nav>
         </div>
     </header>
-    <main>
+
+    <main class="flex flex-col justify-center items-center flex-grow">
         <!-- Add main stuff here! -->
+        <!-- Basic about with h1, paragraph and img. -->
+        <div class="flex flex-col items-center justify-center p-5 mb-34 lg:w-1/2 2xl:w-1/3 2xl:text-2xl">
+
+            <div>
+                <p class="font-bold">
+                    Var i landet erbjuder du dina tjänster?
+                </p>
+                <p class="p-2">Göteborg är den stad jag utgår ifrån, men jag erbjuder mina tjänster i hela landet, både
+                    fysiskt och
+                    digitalt.</p>
+            </div>
+
+            <div>
+                <p class="font-bold"> Hur får jag lättast kontakt med dig?
+                </p>
+                <p class="p-2"> Jag är nåbar via e-post, telefon och LinkedIn. Är det brådskande är det bäst att ringa
+                    mig.
+                    Om jag inte
+                    svarar
+                    så lämnar du ett meddelande så ringar jag upp så fort jag kan.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-bold"> Vi har önskemål om upplägg kring vissa tjänster, hur fungerar det för dig?
+                </p>
+                <p class="p-2"> Jag anpassar mina tjänster efter just er verksamhets behov och önskemål, så det blir så
+                    bra
+                    som möjligt.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-bold"> Har du några samarbeten med andra aktörer?
+                </p>
+                <p class="p-2"> Under åren har jag byggt upp ett nätverk av samarbetspartners som jag varmt kan
+                    rekommendera, exempelvis
+                    psykolog, arbetsmiljöingenjör och HLR-instruktör.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-bold"> Vad är viktigast att tänka på när det gäller hälsoinsatser på arbetsplatsen?
+                </p>
+                <p class="p-2"> Det viktigaste enligt mig är att ta ett initiativ. Det är dock sällan man har svaren på
+                    vad
+                    som är bäst
+                    att
+                    börja med, därför erbjuder jag alltid en första kostnadsfri dialog där vi gemensamt tittar på behov
+                    och
+                    önskemål.
+                </p>
+            </div>
+        </div>
     </main>
-    <footer class="bg-teal-700 w-screen h-34 p-4 flex text-zinc-200 bottom-0 absolute">
+    <footer class="bg-teal-700 w-screen h-34 p-4 flex text-zinc-200 mt-auto">
         <div class="flex justify-center flex-col w-screen">
             <p class="flex justify-center">Boka en kostnadsfri konsultation</p>
             <div class="flex justify-center mt-2">
@@ -64,6 +119,5 @@
     </footer>
     <!-- Fontawesome icons -->
     <script src="https://kit.fontawesome.com/26aa5150aa.js" crossorigin="anonymous"></script>
-
 </body>
 </html>
