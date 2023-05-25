@@ -631,10 +631,6 @@ video {
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -2660,34 +2656,17 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:w-2\/5 {
-    width: 40%;
-  }
-
-  .\32xl\:w-1\/5 {
-    width: 20%;
-  }
-
-  .\32xl\:w-3\/5 {
-    width: 60%;
-  }
-
   .\32xl\:w-3\/6 {
     width: 50%;
   }
 
-  .\32xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .\32xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .\32xl\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .\32xl\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
