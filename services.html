@@ -9,11 +9,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- TailwindCSS configfile loading -->
     <link href="dist/output.css" rel="stylesheet">
+    <!-- CSS styles att använda för JS script! -->
+    <link rel="stylesheet" href="css/js.css">
+
     <title>Dan Dahlén</title>
 </head>
-
 <body class="font-robo flex flex-col min-h-screen overflow-x-hidden">
-    <header class=" flex flex-col">
+    <header class=" flex flex-col sticky top-0 bg-white">
         <div class="flex p-3 bg-teal-700 justify-end">
             <div class="flex flex-col md:flex-row text-zinc-400 h-14 md:h-8 font-pop">
                 <p class="font-bold pt-1 pr-2">Boka en kostnadsfri konsultation</p>
@@ -26,16 +28,23 @@
         <div class="flex justify-center mt-8">
             <nav class="flex justify-center w-screen">
                 <ul class="flex justify-between w-screen mx-6 md:justify-center">
-                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-2xl">
+                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-lg">
                         <a href="index.html">HOME</a>
                     </li>
-                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-2xl">
+                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-lg">
                         <a href="about.html">ABOUT</a>
                     </li>
-                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-2xl">
-                        <a href="services.html">SERVICES</a>
+                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-lg">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown">SERVICES</a>
+                            <div class="dropdown-content">
+                                <a href="services.html#ft">Förebyggande tjänster</a>
+                                <a href="services.html#rt">Rehabiliterande tjänster</a>
+                                <a href="services.html#fv">För vårdgivare</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-2xl">
+                    <li class="font-bold md:text-lg md:mx-12 xl:mx-24 2xl:text-lg">
                         <a href="faq.html">FAQ</a>
                     </li>
                 </ul>
@@ -45,8 +54,8 @@
 
     <main class="flex flex-col items-center flex-grow">
         <div class="flex flex-col mt-5 md:w-3/5">
-            <h2 class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">Förebyggande tjänser</h2>
-            <div class="flex flex-col ml-2 md:pl-5">
+            <h2 id="ft" class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">Förebyggande tjänser</h2>
+            <div class="flex flex-col ml-2 md:pl-5 text-sm md:text-base 2xl:text-xl">
                 <h3 class="font-bold pb-2">Ergonomi</h3>
                 <p class="mb-5">Många som upplever smärta och stelhet, och som inte råkat ut för någon olycka eller
                     sjukdom, har
@@ -90,8 +99,8 @@
                 </p>
             </div>
 
-            <h2 class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">Rehabiliterande tjänster</h2>
-            <div class="flex flex-col pl-2 md:pl-5">
+            <h2 id="rt" class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">Rehabiliterande tjänster</h2>
+            <div class="flex flex-col pl-2 md:pl-5 text-sm md:text-base 2xl:text-xl">
                 <h3 class="font-bold pb-2">Rehabkoordinering</h3>
                 <p class="mb-5">
                     När en medarbetare är sjukskriven ska fokus ligga på att skapa så goda förutsättningar som möjligt
@@ -118,8 +127,8 @@
                     digitalt. </p>
             </div>
 
-            <h2 class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">För vårdgivare</h2>
-            <div class="flex flex-col pl-2 md:pl-5">
+            <h2 id="fv" class="bg-teal-700 p-5 mb-5 font-bold text-white w-max">För vårdgivare</h2>
+            <div class="flex flex-col pl-2 md:pl-5 text-sm md:text-base 2xl:text-xl">
                 <p class="mb-5">
                     Har du en verksamhet inom vården och behöver lösa bemanningen i verksamheten? Då kan du anlita mig
                     som arbetsterapeut, rehabkoordinator och/eller ergonom, tillfälligt eller en längre period. Jag har
