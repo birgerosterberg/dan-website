@@ -96,12 +96,12 @@
           </button>
         </div>
       </section>
-      <section class="">
+      <section class="lg: flex flex-wrap">
         <div
           class="max-w-sm rounded overflow-hidden shadow-lg bg-zinc-300 sm:ml-2 mb-2 md:ml-20"
         >
           <img
-            class="w-40 h-40 mt-2 flex justify-center align-center md:ml-28"
+            class="w-40 h-40 mt-2 flex justify-center align-center md: ml-28"
             src="/images/card images/heart.png"
             alt="heart"
           />
@@ -126,7 +126,7 @@
           class="max-w-sm rounded overflow-hidden shadow-lg bg-zinc-300 sm:ml-2 mb-2 md:ml-20"
         >
           <img
-            class="w-40 h-40 mt-2 flex justify-center align-center md:ml-28"
+            class="w-40 h-40 mt-2 flex justify-center align-center md: ml-28"
             src="/images/card images/plant.png"
             alt="plant"
           />
@@ -178,41 +178,41 @@
       <section
         class="flex flex-col justify-center items-center w-screen h-34 p-4"
       >
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-wrap items-center justify-center">
           <img
-            class="mb-2 mt-2"
+            class="mb-2 mt-2 w-20"
             src="images/partners/Logga Linköping 1.png"
-            alt=""
+            alt="Linköping"
           />
           <img
-            class="mb-2 mt-2"
+            class="mb-2 mt-2 w-20"
             src="images/partners/Logga Higab 1.png"
-            alt=""
+            alt="Higab"
           />
           <img
-            class="mb-2 mt-2"
+            class="mb-2 mt-2 w-20"
             src="images/partners/Logga Agila 1.png"
-            alt=""
+            alt="Agila"
           />
           <img
-            class="mb-2 mt-2"
+            class="mb-2 mt-2 w-28"
             src="images/partners/Logga Smärthjälpen 1.png"
-            alt=""
+            alt="Smärthjälpen"
           />
           <img
-            class="mb-2 mt-2"
+            class="mb-2 mt-2 w-28"
             src="images/partners/Logga Healo 1.png"
-            alt=""
+            alt="Healo"
           />
           <img
-            class="mb-2 mt-2"
+            class="mr-2 mb-2 mt-2 w-24"
             src="images/partners/Logga Färgelanda 1.png"
-            alt=""
+            alt="Färgelanda"
           />
           <img
-            class="mb-2 mt-2"
+            class="mb-2 mt-2 w-24"
             src="images/partners/Logga Scandic 1.png"
-            alt=""
+            alt="Scandic"
           />
         </div>
       </section>
@@ -228,7 +228,113 @@
         <hr />
       </section>
       <!--image slider start-->
-      <section></section>
+      <section>
+        <div
+          id="controls-carousel"
+          class="relative w-full"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/images/testimonials/Testimony1.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                src="/images/testimonials/Testimony2.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/images/testimonials/Testimony3.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/images/testimonials/Testimony4.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/images/testimonials/Testimony5.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-white dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-white dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
       <!--image slider end-->
     </main>
     <footer class="bg-teal-700 w-screen h-34 p-4 flex text-zinc-200 mt-auto">
